@@ -1,11 +1,8 @@
-# Mod7_Challenge
-
-
 # Mod7_Challenge - Analyisis of an ETF and an ETF portfolio from SQL databae
 
 This program pulls data from a SQL database to analyze results for an ETF called PYPL and plot daily returns
 and cumulative returns. It also compares four ETFs (PYPL, GDOT, GS, SQ) in a portfolio and plots
-daily returns and cumulative returns for the 4 ETFs.
+daily returns and cumulative returns for the 4 ETFs. Finally, Voila was used to create a web page with results.
 
 
 
@@ -38,23 +35,27 @@ engine = sqlalchemy.create_engine(database_connection_string)
 
 **Section 1:** Queries the database to pull and examine data for PYPL etf; creates an hvplot for daily returns
 
-![Bar chart](Images/Howell_housing_units_bar_chart.png)
+![PYPL Daily Returns 2016-2020](PYPL_daily_returns_graph.png)
 
 **Section 2:** For PYPL, calculates cumulative return and creates a plot
     
-![Avg Prices Line Chart](Images/Howell_avg_prices_line_chart.png)    
+![PYPL Cumulative Returns](PYPL_cumulative_returns_graph.png)    
 
 **Section 3:** Narrows data to meet specification such as when PYPL closing price is greater than 200
     
-![Interactive Neighborhood Plot](Images/Howell_prices_line_chart_by_neighborhood.png)
-
 **Section 4:** Join data for four ETFs (PYPL, GDOT, GS, SQ) to compare daily and cumulative returns
+![Cumulative Returns for GDOT, PYPL, SQ, GS](four_funds_cumulative_returns.png)
+
+
+**Additional Output** Webpage created by Voila from the Git Bash terminal
+'''
+voila etf_analyzer.ipynb
+
+'''
+
 
 
     
-![Geo Spatial Map](Images/Howell_geo_spatial_map.png)    
-
-
 # Creator
 Program by Ann Howell with guidance from Rice FinTech Bootcamp
 
