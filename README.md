@@ -48,12 +48,14 @@ engine = sqlalchemy.create_engine(database_connection_string)
 
 
 **Additional Output** Webpage created by Voila from the Git Bash terminal
-'''
-voila etf_analyzer.ipynb
 
-'''
+Commands to run voila and create a webpage of etf_analyzer.ipynb
 
+![Voila terminal commands](voila_terminal.png)
 
+Voila creates a webpage on the local host computer
+
+![Voila Webpage](proof_of_voila_webpage.png)
 
     
 # Creator
